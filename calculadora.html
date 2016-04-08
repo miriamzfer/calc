@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>The web site of miriamzfernandez</title>
+    
+  
+  <script type="text/javascript">
+
+  var pantalla;
+
+  function cuadrado(){ 
+    pantalla = document.getElementById("pantalla");
+    pantalla.value = pantalla.value*pantalla.value;
+ 
+  }
+
+  
+  
+  function iniciar() { pantalla = document.getElementById("pantalla");}
+  function vaciar() { document.getElementById("pantalla").value = ""; }
+  
+   
+
+  </script>
+  </head>
+  <body onload="iniciar()">
+    <h1><strong>CORE2016 P3</strong></h1>
+    <p>Buenos días, bienvenido a la calculadora de Miriam Zaragoza Fernández (miriam.zfernandez@alumnos.upm.es)</p>
+
+    
+    <et><p><strong> Número: </strong></p></et> 
+    <input type="text" id="pantalla" onclick="vaciar()"> 
+    <p></p>
+   
+    <button onclick="cuadrado()">x<sup>2</sup></button>
+    <button onclick="inverso()">1/x</button>
+    <button onclick="raiz()">sqrt(x)</button>
+
+ 
+  </body>
+</html>
