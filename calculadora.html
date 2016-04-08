@@ -1,42 +1,99 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <title>The web site of miriamzfernandez</title>
-    
-  
+
+
   <script type="text/javascript">
 
   var pantalla;
 
-  function cuadrado(){ 
+  function cuadrado(){
     pantalla = document.getElementById("pantalla");
     pantalla.value = pantalla.value*pantalla.value;
- 
+
   }
 
-  
-  
+
+
   function iniciar() { pantalla = document.getElementById("pantalla");}
   function vaciar() { document.getElementById("pantalla").value = ""; }
-  
-   
+
+
 
   </script>
   </head>
   <body onload="iniciar()">
     <h1><strong>CORE2016 P3</strong></h1>
-    <p>Buenos días, bienvenido a la calculadora de Miriam Zaragoza Fernández (miriam.zfernandez@alumnos.upm.es)</p>
+    <p>Buenos dï¿½as, bienvenido a la calculadora de Miriam Zaragoza Fernï¿½ndez (miriam.zfernandez@alumnos.upm.es)</p>
 
-    
-    <et><p><strong> Número: </strong></p></et> 
-    <input type="text" id="pantalla" onclick="vaciar()"> 
+
+    <et><p><strong> Nï¿½mero: </strong></p></et>
+    <input type="text" id="pantalla" onclick="vaciar()">
     <p></p>
-   
+
+    <button onclick="cuadrado()">x<sup>2</sup></button>
+  
+
+
+  </body>
+</html>
+=======
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>The web site of miriamzfernandez</title>
+
+    <script type="text/javascript" src="jquery.js"></script>
+
+  <script type="text/javascript">
+
+  var pantalla;
+
+
+  function cuadrado(){
+    pantalla = document.getElementById("pantalla");
+    pantalla.value = pantalla.value*pantalla.value;
+
+  }
+  function inverso(){
+    pantalla = document.getElementById("pantalla");
+    pantalla.value = 1/pantalla.value;
+
+  }
+  function raiz(){
+    pantalla = document.getElementById("pantalla");
+    pantalla.value =  Math.sqrt(pantalla.value);
+
+  }
+
+
+
+  function iniciar() { pantalla = document.getElementById("pantalla");}
+  function vaciar() { document.getElementById("pantalla").value = ""; }
+
+
+
+  </script>
+  </head>
+  <body onload="iniciar()">
+    <h1><strong>CORE2016 P3</strong></h1>
+    <p>Buenos dÃ­as, bienvenido a la calculadora de Miriam Zaragoza FernÃ¡ndez (miriam.zfernandez@alumnos.upm.es)</p>
+
+
+    <et><p><strong> NÃºmero: </strong></p></et>
+    <input type="text" id="pantalla" onclick="vaciar()">
+    <p></p>
+
     <button onclick="cuadrado()">x<sup>2</sup></button>
     <button onclick="inverso()">1/x</button>
     <button onclick="raiz()">sqrt(x)</button>
 
- 
+
+
   </body>
 </html>
+>>>>>>> bcd22f3e591e32d6577ffe84ccf05952e3fac0c5
